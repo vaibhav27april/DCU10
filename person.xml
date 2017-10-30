@@ -1,0 +1,1525 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testmodule title="XCP Demo Testmodule" version="1.0" xmlns="http://www.vector-informatik.de/CANoe/TestModule/1.16">
+  <!--<!-Vector Test Automation Editor 2.1.34.0->-->
+  <!--<!-Version: 1.0->-->
+  <testgroup title="CAN Rx Signal ADAS_CMD_30_Crc01Val Test Using XCP">
+    <testcase ident="tc1" title="Check XCP Parameter ADAS_CMD_30_Crc01Val update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_ADAS_CMD_30_Crc01Val_IVC_R">65535</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_ADAS_CMD_30_Crc01Val"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_ADAS_CMD_30_Crc01Val_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc2" title="Check XCP Parameter ADAS_CMD_30_Crc01Val Max Value">
+      <set title="Set">
+        <envvar name="ENV_ADAS_CMD_30_Crc01Val">65535</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_ADAS_CMD_30_Crc01Val_IVC_R">65535</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc3" title="Check XCP Parameter ADAS_CMD_30_Crc01Val Mid Value">
+      <set title="Set">
+        <envvar name="ENV_ADAS_CMD_30_Crc01Val">65535</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_ADAS_CMD_30_Crc01Val_IVC_R">65535</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal ADAS_CMD_30_AlvCnt01Val Test Using XCP">
+    <testcase ident="tc4" title="Check XCP Parameter ADAS_CMD_30_AlvCnt01Val update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_ADAS_CMD_30_AlvCnt01Val_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_ADAS_CMD_30_AlvCnt01Val"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_ADAS_CMD_30_AlvCnt01Val_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc5" title="Check XCP Parameter ADAS_CMD_30_AlvCnt01Val Max Value">
+      <set title="Set">
+        <envvar name="ENV_ADAS_CMD_30_AlvCnt01Val">255</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_ADAS_CMD_30_AlvCnt01Val_IVC_R">255</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc6" title="Check XCP Parameter ADAS_CMD_30_AlvCnt01Val Mid Value">
+      <set title="Set">
+        <envvar name="ENV_ADAS_CMD_30_AlvCnt01Val">127</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_ADAS_CMD_30_AlvCnt01Val_IVC_R">127</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal LKA_StrTqReqVal Test Using XCP">
+    <testcase ident="tc7" title="Check XCP Parameter LKA_StrTqReqVal update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_LKA_StrTqReqVal_IVC_R">1024</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_LKA_StrTqReqVal"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_StrTqReqVal_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc8" title="Check XCP Parameter LKA_StrTqReqVal Max Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_StrTqReqVal">2047</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_StrTqReqVal_IVC_R">2047</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc9" title="Check XCP Parameter LKA_StrTqReqVal Mid Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_StrTqReqVal">1535</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_StrTqReqVal_IVC_R">1535</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal LKA_ActToiSta Test Using XCP">
+    <testcase ident="tc10" title="Check XCP Parameter LKA_ActToiSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_LKA_ActToiSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_LKA_ActToiSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_ActToiSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc11" title="Check XCP Parameter LKA_ActToiSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_ActToiSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_ActToiSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc12" title="Check XCP Parameter LKA_ActToiSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_ActToiSta">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_ActToiSta_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal LKA_ToiFltSta Test Using XCP">
+    <testcase ident="tc13" title="Check XCP Parameter LKA_ToiFltSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_LKA_ToiFltSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_LKA_ToiFltSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_ToiFltSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc14" title="Check XCP Parameter LKA_ToiFltSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_ToiFltSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_ToiFltSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc15" title="Check XCP Parameter LKA_ToiFltSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_ToiFltSta">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_ToiFltSta_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal FCAref_LO_WrnSta Test Using XCP">
+    <testcase ident="tc16" title="Check XCP Parameter FCAref_LO_WrnSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_FCAref_LO_WrnSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_FCAref_LO_WrnSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_FCAref_LO_WrnSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc17" title="Check XCP Parameter FCAref_LO_WrnSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_FCAref_LO_WrnSta">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_FCAref_LO_WrnSta_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc18" title="Check XCP Parameter FCAref_LO_WrnSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_FCAref_LO_WrnSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_FCAref_LO_WrnSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal LKA_RcgSta Test Using XCP">
+    <testcase ident="tc19" title="Check XCP Parameter LKA_RcgSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_LKA_RcgSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_LKA_RcgSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_RcgSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc20" title="Check XCP Parameter LKA_RcgSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_RcgSta">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_RcgSta_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc21" title="Check XCP Parameter LKA_RcgSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_RcgSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_RcgSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal LKA_LnWrnSta Test Using XCP">
+    <testcase ident="tc22" title="Check XCP Parameter LKA_LnWrnSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_LKA_LnWrnSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_LKA_LnWrnSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_LnWrnSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc23" title="Check XCP Parameter LKA_LnWrnSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_LnWrnSta">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_LnWrnSta_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc24" title="Check XCP Parameter LKA_LnWrnSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_LnWrnSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_LnWrnSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal LKA_OptUsmSta Test Using XCP">
+    <testcase ident="tc25" title="Check XCP Parameter LKA_OptUsmSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_LKA_OptUsmSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_LKA_OptUsmSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_OptUsmSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc26" title="Check XCP Parameter LKA_OptUsmSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_OptUsmSta">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_OptUsmSta_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc27" title="Check XCP Parameter LKA_OptUsmSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_OptUsmSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_OptUsmSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal LDW_OptUsmSta Test Using XCP">
+    <testcase ident="tc28" title="Check XCP Parameter LDW_OptUsmSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_LDW_OptUsmSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_LDW_OptUsmSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LDW_OptUsmSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc29" title="Check XCP Parameter LDW_OptUsmSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_LDW_OptUsmSta">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LDW_OptUsmSta_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc30" title="Check XCP Parameter LDW_OptUsmSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_LDW_OptUsmSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LDW_OptUsmSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal LKA_SysIndReq Test Using XCP">
+    <testcase ident="tc31" title="Check XCP Parameter LKA_SysIndReq update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_LKA_SysIndReq_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_LKA_SysIndReq"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_SysIndReq_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc32" title="Check XCP Parameter LKA_SysIndReq Max Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_SysIndReq">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_SysIndReq_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc33" title="Check XCP Parameter LKA_SysIndReq Mid Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_SysIndReq">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_SysIndReq_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal LKA_MdpsIndReq Test Using XCP">
+    <testcase ident="tc34" title="Check XCP Parameter LKA_MdpsIndReq update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_LKA_MdpsIndReq_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_LKA_MdpsIndReq"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_MdpsIndReq_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc35" title="Check XCP Parameter LKA_MdpsIndReq Max Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_MdpsIndReq">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_MdpsIndReq_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc36" title="Check XCP Parameter LKA_MdpsIndReq Mid Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_MdpsIndReq">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_MdpsIndReq_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal LKA_WrnPUDis Test Using XCP">
+    <testcase ident="tc37" title="Check XCP Parameter LKA_WrnPUDis update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_LKA_WrnPUDis_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_LKA_WrnPUDis"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_WrnPUDis_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc38" title="Check XCP Parameter LKA_WrnPUDis Max Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_WrnPUDis">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_WrnPUDis_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc39" title="Check XCP Parameter LKA_WrnPUDis Mid Value">
+      <set title="Set">
+        <envvar name="ENV_LKA_WrnPUDis">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_LKA_WrnPUDis_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal ADAS_CMD_40_Crc01Val Test Using XCP">
+    <testcase ident="tc40" title="Check XCP Parameter ADAS_CMD_40_Crc01Val update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_ADAS_CMD_40_Crc01Val_IVC_R">65535</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_ADAS_CMD_40_Crc01Val"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_ADAS_CMD_40_Crc01Val_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc41" title="Check XCP Parameter ADAS_CMD_40_Crc01Val Max Value">
+      <set title="Set">
+        <envvar name="ENV_ADAS_CMD_40_Crc01Val">65535</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_ADAS_CMD_40_Crc01Val_IVC_R">65535</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc42" title="Check XCP Parameter ADAS_CMD_40_Crc01Val Mid Value">
+      <set title="Set">
+        <envvar name="ENV_ADAS_CMD_40_Crc01Val">65535</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_ADAS_CMD_40_Crc01Val_IVC_R">65535</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal ADAS_CMD_40_AlvCnt01Val Test Using XCP">
+    <testcase ident="tc43" title="Check XCP Parameter ADAS_CMD_40_AlvCnt01Val update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_ADAS_CMD_40_AlvCnt01Val_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_ADAS_CMD_40_AlvCnt01Val"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_ADAS_CMD_40_AlvCnt01Val_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc44" title="Check XCP Parameter ADAS_CMD_40_AlvCnt01Val Max Value">
+      <set title="Set">
+        <envvar name="ENV_ADAS_CMD_40_AlvCnt01Val">255</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_ADAS_CMD_40_AlvCnt01Val_IVC_R">255</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc45" title="Check XCP Parameter ADAS_CMD_40_AlvCnt01Val Mid Value">
+      <set title="Set">
+        <envvar name="ENV_ADAS_CMD_40_AlvCnt01Val">127</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_ADAS_CMD_40_AlvCnt01Val_IVC_R">127</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCW_Sta Test Using XCP">
+    <testcase ident="tc46" title="Check XCP Parameter BCW_Sta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCW_Sta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCW_Sta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_Sta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc47" title="Check XCP Parameter BCW_Sta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_Sta">15</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_Sta_IVC_R">15</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc48" title="Check XCP Parameter BCW_Sta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_Sta">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_Sta_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCW_OnOffEquipSta Test Using XCP">
+    <testcase ident="tc49" title="Check XCP Parameter BCW_OnOffEquipSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCW_OnOffEquipSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCW_OnOffEquipSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_OnOffEquipSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc50" title="Check XCP Parameter BCW_OnOffEquipSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_OnOffEquipSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_OnOffEquipSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc51" title="Check XCP Parameter BCW_OnOffEquipSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_OnOffEquipSta">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_OnOffEquipSta_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCW_SndWarngSta Test Using XCP">
+    <testcase ident="tc52" title="Check XCP Parameter BCW_SndWarngSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCW_SndWarngSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCW_SndWarngSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_SndWarngSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc53" title="Check XCP Parameter BCW_SndWarngSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_SndWarngSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_SndWarngSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc54" title="Check XCP Parameter BCW_SndWarngSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_SndWarngSta">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_SndWarngSta_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCW_LftIndSta Test Using XCP">
+    <testcase ident="tc55" title="Check XCP Parameter BCW_LftIndSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCW_LftIndSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCW_LftIndSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_LftIndSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc56" title="Check XCP Parameter BCW_LftIndSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_LftIndSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_LftIndSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc57" title="Check XCP Parameter BCW_LftIndSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_LftIndSta">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_LftIndSta_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCW_RtIndSta Test Using XCP">
+    <testcase ident="tc58" title="Check XCP Parameter BCW_RtIndSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCW_RtIndSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCW_RtIndSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_RtIndSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc59" title="Check XCP Parameter BCW_RtIndSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_RtIndSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_RtIndSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc60" title="Check XCP Parameter BCW_RtIndSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_RtIndSta">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_RtIndSta_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCW_LftSndWrngSta Test Using XCP">
+    <testcase ident="tc61" title="Check XCP Parameter BCW_LftSndWrngSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCW_LftSndWrngSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCW_LftSndWrngSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_LftSndWrngSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc62" title="Check XCP Parameter BCW_LftSndWrngSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_LftSndWrngSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_LftSndWrngSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc63" title="Check XCP Parameter BCW_LftSndWrngSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_LftSndWrngSta">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_LftSndWrngSta_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCW_RtSndWrngSta Test Using XCP">
+    <testcase ident="tc64" title="Check XCP Parameter BCW_RtSndWrngSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCW_RtSndWrngSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCW_RtSndWrngSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_RtSndWrngSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc65" title="Check XCP Parameter BCW_RtSndWrngSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_RtSndWrngSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_RtSndWrngSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc66" title="Check XCP Parameter BCW_RtSndWrngSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_RtSndWrngSta">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_RtSndWrngSta_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCW_LftIndBriLvlSta Test Using XCP">
+    <testcase ident="tc67" title="Check XCP Parameter BCW_LftIndBriLvlSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCW_LftIndBriLvlSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCW_LftIndBriLvlSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_LftIndBriLvlSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc68" title="Check XCP Parameter BCW_LftIndBriLvlSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_LftIndBriLvlSta">255</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_LftIndBriLvlSta_IVC_R">255</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc69" title="Check XCP Parameter BCW_LftIndBriLvlSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_LftIndBriLvlSta">127</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_LftIndBriLvlSta_IVC_R">127</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCW_RtIndBriLvlSta Test Using XCP">
+    <testcase ident="tc70" title="Check XCP Parameter BCW_RtIndBriLvlSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCW_RtIndBriLvlSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCW_RtIndBriLvlSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_RtIndBriLvlSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc71" title="Check XCP Parameter BCW_RtIndBriLvlSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_RtIndBriLvlSta">255</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_RtIndBriLvlSta_IVC_R">255</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc72" title="Check XCP Parameter BCW_RtIndBriLvlSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_RtIndBriLvlSta">127</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_RtIndBriLvlSta_IVC_R">127</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCW_SnstvtyModRetVal Test Using XCP">
+    <testcase ident="tc73" title="Check XCP Parameter BCW_SnstvtyModRetVal update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCW_SnstvtyModRetVal_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCW_SnstvtyModRetVal"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_SnstvtyModRetVal_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc74" title="Check XCP Parameter BCW_SnstvtyModRetVal Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_SnstvtyModRetVal">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_SnstvtyModRetVal_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc75" title="Check XCP Parameter BCW_SnstvtyModRetVal Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCW_SnstvtyModRetVal">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCW_SnstvtyModRetVal_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_Sta Test Using XCP">
+    <testcase ident="tc76" title="Check XCP Parameter BCA_Sta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_Sta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_Sta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Sta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc77" title="Check XCP Parameter BCA_Sta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Sta">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Sta_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc78" title="Check XCP Parameter BCA_Sta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Sta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Sta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_OnOffEquipSta Test Using XCP">
+    <testcase ident="tc79" title="Check XCP Parameter BCA_OnOffEquipSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_OnOffEquipSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_OnOffEquipSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_OnOffEquipSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc80" title="Check XCP Parameter BCA_OnOffEquipSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_OnOffEquipSta">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_OnOffEquipSta_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc81" title="Check XCP Parameter BCA_OnOffEquipSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_OnOffEquipSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_OnOffEquipSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_WrngSta Test Using XCP">
+    <testcase ident="tc82" title="Check XCP Parameter BCA_WrngSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_WrngSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_WrngSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_WrngSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc83" title="Check XCP Parameter BCA_WrngSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_WrngSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_WrngSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc84" title="Check XCP Parameter BCA_WrngSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_WrngSta">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_WrngSta_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_FLBrkCtrlReq Test Using XCP">
+    <testcase ident="tc85" title="Check XCP Parameter BCA_FLBrkCtrlReq update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_FLBrkCtrlReq_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_FLBrkCtrlReq"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_FLBrkCtrlReq_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc86" title="Check XCP Parameter BCA_FLBrkCtrlReq Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_FLBrkCtrlReq">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_FLBrkCtrlReq_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc87" title="Check XCP Parameter BCA_FLBrkCtrlReq Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_FLBrkCtrlReq">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_FLBrkCtrlReq_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_FRBrkCtrlReq Test Using XCP">
+    <testcase ident="tc88" title="Check XCP Parameter BCA_FRBrkCtrlReq update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_FRBrkCtrlReq_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_FRBrkCtrlReq"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_FRBrkCtrlReq_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc89" title="Check XCP Parameter BCA_FRBrkCtrlReq Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_FRBrkCtrlReq">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_FRBrkCtrlReq_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc90" title="Check XCP Parameter BCA_FRBrkCtrlReq Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_FRBrkCtrlReq">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_FRBrkCtrlReq_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_RLBrkCtrlReq Test Using XCP">
+    <testcase ident="tc91" title="Check XCP Parameter BCA_RLBrkCtrlReq update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_RLBrkCtrlReq_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_RLBrkCtrlReq"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_RLBrkCtrlReq_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc92" title="Check XCP Parameter BCA_RLBrkCtrlReq Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_RLBrkCtrlReq">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_RLBrkCtrlReq_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc93" title="Check XCP Parameter BCA_RLBrkCtrlReq Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_RLBrkCtrlReq">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_RLBrkCtrlReq_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_RRBrkCtrlReq Test Using XCP">
+    <testcase ident="tc94" title="Check XCP Parameter BCA_RRBrkCtrlReq update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_RRBrkCtrlReq_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_RRBrkCtrlReq"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_RRBrkCtrlReq_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc95" title="Check XCP Parameter BCA_RRBrkCtrlReq Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_RRBrkCtrlReq">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_RRBrkCtrlReq_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc96" title="Check XCP Parameter BCA_RRBrkCtrlReq Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_RRBrkCtrlReq">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_RRBrkCtrlReq_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_FrWhlTrgtBrkPrsrVal Test Using XCP">
+    <testcase ident="tc97" title="Check XCP Parameter BCA_FrWhlTrgtBrkPrsrVal update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_FrWhlTrgtBrkPrsrVal_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_FrWhlTrgtBrkPrsrVal"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_FrWhlTrgtBrkPrsrVal_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc98" title="Check XCP Parameter BCA_FrWhlTrgtBrkPrsrVal Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_FrWhlTrgtBrkPrsrVal">63</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_FrWhlTrgtBrkPrsrVal_IVC_R">63</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc99" title="Check XCP Parameter BCA_FrWhlTrgtBrkPrsrVal Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_FrWhlTrgtBrkPrsrVal">31</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_FrWhlTrgtBrkPrsrVal_IVC_R">31</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_RrWhlTrgtBrkPrsrVal Test Using XCP">
+    <testcase ident="tc100" title="Check XCP Parameter BCA_RrWhlTrgtBrkPrsrVal update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_RrWhlTrgtBrkPrsrVal_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_RrWhlTrgtBrkPrsrVal"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_RrWhlTrgtBrkPrsrVal_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc101" title="Check XCP Parameter BCA_RrWhlTrgtBrkPrsrVal Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_RrWhlTrgtBrkPrsrVal">63</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_RrWhlTrgtBrkPrsrVal_IVC_R">63</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc102" title="Check XCP Parameter BCA_RrWhlTrgtBrkPrsrVal Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_RrWhlTrgtBrkPrsrVal">31</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_RrWhlTrgtBrkPrsrVal_IVC_R">31</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_Plus_Deccel_Req Test Using XCP">
+    <testcase ident="tc103" title="Check XCP Parameter BCA_Plus_Deccel_Req update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_Plus_Deccel_Req_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_Deccel_Req"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_Deccel_Req_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc104" title="Check XCP Parameter BCA_Plus_Deccel_Req Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_Deccel_Req">15</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_Deccel_Req_IVC_R">15</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc105" title="Check XCP Parameter BCA_Plus_Deccel_Req Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_Deccel_Req">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_Deccel_Req_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_Plus_BrkCmdSta Test Using XCP">
+    <testcase ident="tc106" title="Check XCP Parameter BCA_Plus_BrkCmdSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_Plus_BrkCmdSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_BrkCmdSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_BrkCmdSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc107" title="Check XCP Parameter BCA_Plus_BrkCmdSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_BrkCmdSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_BrkCmdSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc108" title="Check XCP Parameter BCA_Plus_BrkCmdSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_BrkCmdSta">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_BrkCmdSta_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_Plus_LftWrngSta Test Using XCP">
+    <testcase ident="tc109" title="Check XCP Parameter BCA_Plus_LftWrngSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_Plus_LftWrngSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_LftWrngSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_LftWrngSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc110" title="Check XCP Parameter BCA_Plus_LftWrngSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_LftWrngSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_LftWrngSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc111" title="Check XCP Parameter BCA_Plus_LftWrngSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_LftWrngSta">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_LftWrngSta_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_Plus_RtWrngSta Test Using XCP">
+    <testcase ident="tc112" title="Check XCP Parameter BCA_Plus_RtWrngSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_Plus_RtWrngSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_RtWrngSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_RtWrngSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc113" title="Check XCP Parameter BCA_Plus_RtWrngSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_RtWrngSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_RtWrngSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc114" title="Check XCP Parameter BCA_Plus_RtWrngSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_RtWrngSta">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_RtWrngSta_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_Plus_OnOffEquipSta Test Using XCP">
+    <testcase ident="tc115" title="Check XCP Parameter BCA_Plus_OnOffEquipSta update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_Plus_OnOffEquipSta_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_OnOffEquipSta"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_OnOffEquipSta_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc116" title="Check XCP Parameter BCA_Plus_OnOffEquipSta Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_OnOffEquipSta">7</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_OnOffEquipSta_IVC_R">7</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc117" title="Check XCP Parameter BCA_Plus_OnOffEquipSta Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_OnOffEquipSta">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_OnOffEquipSta_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+  <testgroup title="CAN Rx Signal BCA_Plus_FuncStat Test Using XCP">
+    <testcase ident="tc118" title="Check XCP Parameter BCA_Plus_FuncStat update">
+      <initialize title="Intialize parameters" wait="500">
+        <envvar name="ENV_BCA_Plus_FuncStat_IVC_R">0</envvar>
+      </initialize>
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_FuncStat"> 1 </envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_FuncStat_IVC_R"> 1 </envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc119" title="Check XCP Parameter BCA_Plus_FuncStat Max Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_FuncStat">3</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_FuncStat_IVC_R">3</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+    <testcase ident="tc120" title="Check XCP Parameter BCA_Plus_FuncStat Mid Value">
+      <set title="Set">
+        <envvar name="ENV_BCA_Plus_FuncStat">1</envvar>
+      </set>
+      <wait time="1000" title="Waiting for 1 Second" />
+      <statecheck title="State Check" wait="1000">
+        <expected>
+          <envvar name="ENV_BCA_Plus_FuncStat_IVC_R">1</envvar>
+        </expected>
+      </statecheck>
+    </testcase>
+  </testgroup>
+</testmodule>
